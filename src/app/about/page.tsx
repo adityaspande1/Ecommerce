@@ -12,7 +12,7 @@ export default function AboutPage() {
               Founded in 2020, Melody Market has grown from a small local music shop to one of the most trusted names in musical instruments and equipment. Our passion for music drives everything we do.
             </p>
             <p className="text-muted-foreground">
-              We believe that music has the power to transform lives, and we're dedicated to helping musicians of all levels find the perfect instruments and equipment to express themselves.
+              We believe that music has the power to transform lives, and we&apos;re dedicated to helping musicians of all levels find the perfect instruments and equipment to express themselves.
             </p>
             <div className="mt-8 flex items-center space-x-4">
               <Music2 className="h-12 w-12 text-primary" />

@@ -14,7 +14,7 @@ export default function TestimonialCard({ name, role, content }: TestimonialProp
       transition={{ type: "spring", stiffness: 300 }}
     >
       <div>
-        <p className="text-gray-600 italic mb-4">"{content}"</p>
+        <p className="text-gray-600 italic mb-4">&quot;{content}&quot;</p>
       </div>
       <div>
         <p className="text-sky-800 font-semibold">{name}</p>
