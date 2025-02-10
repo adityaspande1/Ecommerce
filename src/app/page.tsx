@@ -3,6 +3,7 @@ import FeaturesSection from "@/components/Feature";
 import WaveVisualization from "@/components/Wave";
 import TestimonialMarquee from "@/components/TestimonialMarquee";
 import { motion } from "framer-motion";
+import FeaturedProducts from "@/components/Feature-products";
 
 export default function Home() {
   return (
@@ -45,17 +46,26 @@ export default function Home() {
       <section className="container mx-auto px-4 mt-20">
         <FeaturesSection />
       </section>
+          {/* Feature Products */}
+
+      <section className=" py-12">
+        <FeaturedProducts/>
+      </section>
 
       {/* Testimonial Marquee */}
       <motion.section 
       initial={{ opacity: 0, y: 50 }}
       whileInView={{ opacity: 1, y: 0 }}
       transition={{ duration: 0.4, ease: "easeOut" }}
-      viewport={{ once: true, amount: 0.3 }} // Triggers animation when 30% of the section is visible
-
+      viewport={{ once: true, amount: 0.3 }}
       className="container mx-auto px-4 mt-20">
         <TestimonialMarquee />
       </motion.section>
+
+    {/* Feature */}
+
+
     </>
+
   );
 }
