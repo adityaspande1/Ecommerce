@@ -24,7 +24,7 @@ const FeaturesSection = () => {
               key={index}
               initial={{ opacity: 0, y: 50 }}
               whileInView={{ opacity: 1, y: 0 }}
-              transition={{ duration: 0.8, ease: "easeOut" }}
+              transition={{ duration: 0.4, ease: "easeOut" }}
               viewport={{ once: true, amount: 0.3 }} // Triggers animation when 30% of the section is visible
               whileHover={{ scale: 1.1 }}
               className="flex flex-col items-center bg-sky-200 text-center transition-colors hover:text-primary p-4 rounded-md shadow-md"

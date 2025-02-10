@@ -6,7 +6,7 @@ import { Music2 } from "lucide-react"
 const NavList = [
   { link: "/", name: "Home" },
   { link: "/about", name: "About" },
-  { link: "/contact", name: "Contact" },
+  { link: "/contacts", name: "Contact" },
 ]
 
 export default function Navbar() {

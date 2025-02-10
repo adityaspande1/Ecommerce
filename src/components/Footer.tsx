@@ -33,7 +33,7 @@ const Footer = () => {
           <div className="footer-nav flex gap-6 sm:gap-10 text-lg sm:text-xl">
             <Link href="/">Home</Link>
             <Link href="/about">About</Link>
-            <Link href="/contact">Contact</Link>
+            <Link href="/contacts">Contact</Link>
           </div>
 
           <div className="social-div flex gap-4 sm:gap-5">

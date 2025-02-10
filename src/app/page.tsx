@@ -1,6 +1,7 @@
 "use client";
 import FeaturesSection from "@/components/Feature";
 import WaveVisualization from "@/components/Wave";
+import TestimonialMarquee from "@/components/TestimonialMarquee";
 import { motion } from "framer-motion";
 
 export default function Home() {
@@ -41,9 +42,20 @@ export default function Home() {
       </div>
 
       {/* Features Section */}
-      <section className="container mx-auto px-4">
+      <section className="container mx-auto px-4 mt-20">
         <FeaturesSection />
       </section>
+
+      {/* Testimonial Marquee */}
+      <motion.section 
+      initial={{ opacity: 0, y: 50 }}
+      whileInView={{ opacity: 1, y: 0 }}
+      transition={{ duration: 0.4, ease: "easeOut" }}
+      viewport={{ once: true, amount: 0.3 }} // Triggers animation when 30% of the section is visible
+
+      className="container mx-auto px-4 mt-20">
+        <TestimonialMarquee />
+      </motion.section>
     </>
   );
 }
