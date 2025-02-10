@@ -8,9 +8,11 @@ import FeaturedProducts from "@/components/Feature-products";
 export default function Home() {
   return (
     <>
-      <div className="container mb-20">
+      <div className="container mb-20 justify-center align-center  ">
         {/* Hero Section */}
-        <div className="flex items-center justify-center py-2 align-center text-center">
+        <div className="flex items-center justify-center py-2 align-center text-center m-auto">
+        <div className=" hidden sm:block h-[200px] w-[200px]"></div>
+
           <motion.div
             initial={{ opacity: 0, y: 150 }}
             animate={{ opacity: 1, y: 0 }}
@@ -32,7 +34,7 @@ export default function Home() {
           </motion.div>
         </div>
       {/* Wave Section */}
-      <div className="container">
+      <div className="container  mt-20">
       <div className="wave-wrapper relative mt-20">
           <WaveVisualization />
           <br /><br /><br /><br />
